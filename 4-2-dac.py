@@ -1,9 +1,10 @@
+import RPi.GPIO as GPIO
+import time
+
+
 def decimal2binary(value):
     return [int(bit) for bit in format(value, 'b').zfill(8)]
 
-
-import RPi.GPIO as GPIO
-import time
 
 GPIO.setwarnings(False)
 
